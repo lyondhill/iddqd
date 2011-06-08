@@ -7,3 +7,4 @@ shared_writable_dirs:
 php_extensions:
     - pdo
     - curl
+    - mysql

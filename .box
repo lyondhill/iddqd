@@ -1,11 +1,8 @@
 shared_writable_dirs:
-    - /some/dir/logs
-    - /etc/cache
-    - /cache/*/
-    - /cache/*.ini
-    - /cache/*.php
-    - /uploads/*/
-    - /uploads/*.*
+    - some/dir/logs
+    - etc/cache
+    - cache
+    - uploads
     
 php_extensions:
     - pdo

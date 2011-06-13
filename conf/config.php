@@ -13,13 +13,11 @@ if (($_SERVER['HTTP_HOST']) == '127.0.0.1'){
 else {
     // Pagoda Database
     $Configuration['Database']['Name'] = 'ula';
-    $Configuration['Database']['Host'] = 'localhost:/tmp/mysql/ula.sock';
+    $Configuration['Database']['Host'] = 'localhost;unix_socket=/tmp/mysql/ula.sock';
     $Configuration['Database']['User'] = 'season';
     $Configuration['Database']['Password'] = 'KlwvX63x';
 }
 
-print_r ($Configuration);
-exit;
 // EnabledApplications
 $Configuration['EnabledApplications']['Conversations'] = 'conversations';
 $Configuration['EnabledApplications']['Vanilla'] = 'vanilla';

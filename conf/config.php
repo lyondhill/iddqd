@@ -39,7 +39,7 @@ $Configuration['Garden']['Installed'] = TRUE;
 $Configuration['Garden']['Errors']['MasterView'] = 'deverror.master.php'; 
 $Configuration['Garden']['Theme'] = 'default';
 $Configuration['Garden']['Errors']['LogEnabled'] = TRUE;
-$Configuration['Garden']['Errors']['LogFile'] = 'logs/php_errors.log';
+// $Configuration['Garden']['Errors']['LogFile'] = 'logs/php_errors.log';
 
 // Modules
 $Configuration['Modules']['Vanilla']['Content'] = 'a:6:{i:0;s:13:"MessageModule";i:1;s:7:"Notices";i:2;s:21:"NewConversationModule";i:3;s:19:"NewDiscussionModule";i:4;s:7:"Content";i:5;s:3:"Ads";}';

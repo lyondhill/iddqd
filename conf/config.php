@@ -3,9 +3,6 @@
 // Conversations
 $Configuration['Conversations']['Version'] = '2.0.17.10';
 
-print_r ($_SERVER['HTTP_HOST']);
-exit;
-
 if (($_SERVER['HTTP_HOST']) == '127.0.0.2'){
     // Local Database
     echo "using local db settings";

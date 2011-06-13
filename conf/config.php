@@ -3,11 +3,21 @@
 // Conversations
 $Configuration['Conversations']['Version'] = '2.0.17.10';
 
-// Database
-$Configuration['Database']['Name'] = 'forum-vanilla';
-$Configuration['Database']['Host'] = 'localhost';
-$Configuration['Database']['User'] = 'root';
-$Configuration['Database']['Password'] = 'root';
+if ($_SERVER['HTTP_HOST'] == '127.0.0.1'){
+    // local Database
+    $Configuration['Database']['Name'] = 'forum-vanilla';
+    $Configuration['Database']['Host'] = 'localhost';
+    $Configuration['Database']['User'] = 'root';
+    $Configuration['Database']['Password'] = 'root';
+}
+
+else{
+    // pagoda Database
+    $Configuration['Database']['Name'] = 'ula';
+    $Configuration['Database']['Host'] = 'localhost:/tmp/mysql/ula.sock';
+    $Configuration['Database']['User'] = 'season';
+    $Configuration['Database']['Password'] = 'KlwvX63x';
+}
 
 // EnabledApplications
 $Configuration['EnabledApplications']['Conversations'] = 'conversations';

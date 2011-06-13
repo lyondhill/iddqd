@@ -4,6 +4,6 @@ shared_writable_dirs:
     - logs
     
 php_extensions:
-    - pdo
+    - pdo_mysql
     - curl
     - mysql

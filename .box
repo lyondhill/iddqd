@@ -1,7 +1,6 @@
 shared_writable_dirs:
     - cache
     - uploads
-    - logs
     
 php_extensions:
     - pdo_mysql

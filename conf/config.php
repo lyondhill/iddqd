@@ -12,6 +12,8 @@ if ($_SERVER['HTTP_HOST'] == '127.0.0.1'){
 }
 
 else{
+    echo "using pagoda db";
+    exit;
     // pagoda Database
     $Configuration['Database']['Name'] = 'ula';
     $Configuration['Database']['Host'] = 'localhost:/tmp/mysql/ula.sock';

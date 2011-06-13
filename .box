@@ -1,6 +1,4 @@
 shared_writable_dirs:
-    - some/dir/logs
-    - etc/cache
     - cache
     - uploads
     - logs

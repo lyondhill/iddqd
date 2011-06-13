@@ -7,3 +7,4 @@
 /conf/bootstrap.after.php
 /conf/locale-*
 .DS_Store
+logs/

@@ -3,6 +3,7 @@ shared_writable_dirs:
     - etc/cache
     - cache
     - uploads
+    - logs
     
 php_extensions:
     - pdo

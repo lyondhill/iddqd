@@ -6,3 +6,5 @@ php_extensions:
     - pdo_mysql
     - curl
     - mysql
+    - pdo
+    - gd

@@ -3,10 +3,8 @@
 // Conversations
 $Configuration['Conversations']['Version'] = '2.0.17.10';
 
-if (($_SERVER['HTTP_HOST']) == '127.0.0.2'){
+if (($_SERVER['HTTP_HOST']) == '127.0.0.1'){
     // Local Database
-    echo "using local db settings";
-    exit;
     $Configuration['Database']['Name'] = 'forum-vanilla';
     $Configuration['Database']['Host'] = 'localhost';
     $Configuration['Database']['User'] = 'root';
@@ -14,14 +12,14 @@ if (($_SERVER['HTTP_HOST']) == '127.0.0.2'){
 }
 else {
     // Pagoda Database
-    echo "using pagoda db settings";
-    exit;
     $Configuration['Database']['Name'] = 'ula';
     $Configuration['Database']['Host'] = 'localhost:/tmp/mysql/ula.sock';
     $Configuration['Database']['User'] = 'season';
     $Configuration['Database']['Password'] = 'KlwvX63x';
 }
 
+print_r ($Configuration);
+exit;
 // EnabledApplications
 $Configuration['EnabledApplications']['Conversations'] = 'conversations';
 $Configuration['EnabledApplications']['Vanilla'] = 'vanilla';

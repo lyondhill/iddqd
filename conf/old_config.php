@@ -5,10 +5,10 @@ $Configuration['Conversations']['Version'] = '2.0.17.10';
 
 if ($_SERVER['pagoda'] == 'yes'){
     // pagoda Database
-    $Configuration['Database']['Name'] = 'ula';
-    $Configuration['Database']['Host'] = 'localhost;unix_socket=/tmp/mysql/ula.sock';
-    $Configuration['Database']['User'] = 'season';
-    $Configuration['Database']['Password'] = 'KlwvX63x';
+    $Configuration['Database']['Name'] = 'celia';
+    $Configuration['Database']['Host'] = 'localhost;unix_socket=/tmp/mysql/celia.sock';
+    $Configuration['Database']['User'] = 'ilona';
+    $Configuration['Database']['Password'] = 'x6grUFmu';
 }
 
 else{

@@ -28,7 +28,7 @@ $Configuration['EnabledPlugins']['GettingStarted'] = 'GettingStarted';
 $Configuration['EnabledPlugins']['HtmLawed'] = 'HtmLawed';
 
 // Garden
-$Configuration['Garden']['Title'] = 'IDDQD';
+$Configuration['Garden']['Title'] = 'Pagoda Forum';
 $Configuration['Garden']['Cookie']['Salt'] = '2GPQ27DJFN';
 $Configuration['Garden']['Cookie']['Domain'] = '';
 $Configuration['Garden']['Version'] = '2.0.17.10';
@@ -37,7 +37,7 @@ $Configuration['Garden']['CanProcessImages'] = TRUE;
 $Configuration['Garden']['Installed'] = TRUE;
 $Configuration['Garden']['Errors']['MasterView'] = 'deverror.master.php';
 $Configuration['Garden']['Errors']['LogEnabled'] = TRUE;
-$Configuration['Garden']['Theme'] = 'DarkMist';
+$Configuration['Garden']['Theme'] = 'default';
 
 // Modules
 $Configuration['Modules']['Vanilla']['Content'] = 'a:6:{i:0;s:13:"MessageModule";i:1;s:7:"Notices";i:2;s:21:"NewConversationModule";i:3;s:19:"NewDiscussionModule";i:4;s:7:"Content";i:5;s:3:"Ads";}';
@@ -55,4 +55,4 @@ $Configuration['Routes']['DefaultController'] = 'discussions';
 // Vanilla
 $Configuration['Vanilla']['Version'] = '2.0.17.10';
 
-// Last edited by lyon (::1)2011-06-15 17:07:35
+// Last edited by pagoda_admin (127.0.0.1)2011-06-13 16:14:05

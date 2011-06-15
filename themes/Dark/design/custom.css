@@ -1,0 +1,843 @@
+/*
+
+*/
+
+body {
+	background:#5e5e5e;
+	color:#333333;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-weight:normal;
+	text-align:center;
+}
+body.Post div.Popup a.Close {
+  color: #2b2d33;
+}
+#Body {
+	margin:0 auto;
+	background:#5e5e5e;
+}
+
+#container-wrap{
+	width:100%;
+	margin:50px auto;
+
+}
+
+#container {
+	margin:0 auto;
+	width:960px;
+  border:2px solid #969696;
+	-moz-box-shadow: 0 0 0 #28774F;
+	background:#5e5e5e;
+	color: #fff;
+}
+
+a, a:link, a:visited, a:active {
+	color:#ffffdd;
+}
+
+ul.MessageList div.Meta span.Author a {
+    font-size: 12px;
+    font-weight: bold;
+    color:#8dc48d;
+}
+.NumberedPager a{
+    color:#969696;
+}
+.NumberedPager a:hover{
+    color:#dbdbdb;
+}
+.NumberedPager a.Highlight {
+    color: #8dc48d;
+}
+.NumberedPager a.Highlight:hover {
+    color: #AED5AE;
+}
+a:hover{
+	color:#e4ca95;
+	/*text-decoration:underline;*/
+}
+
+div.Box h4 {
+	color:#8dc48d;
+}
+ul.PanelInfo li.Active {
+    background: #DBDBDB;
+}
+
+a.BigButton {
+  background: #DBDBDB;
+	color:#B488B4;
+	text-shadow:0 1px 0 #fff;
+	border: 2px solid #969696;
+}
+
+a.BigButton:hover {
+  color: #774b77;
+	border: 2px solid #969696;  
+}
+a.BigButton:focus {
+  background: #c2c2c2;
+	color: #774b77;  
+}
+
+input.Button {
+    background: none repeat scroll 0 0 #DBDBDB;
+    border: 1px solid #666666;
+    color: #6BB36B;
+}
+
+#AttachFileLink {
+	cursor:pointer;
+}
+
+a.Button,
+.Button, #AttachFileLink {
+   cursor: pointer;
+   margin-left: 5px;
+   margin-top: 5px;
+   font-size: 10px;
+   padding: 2px;
+   background:#f2f2f2;
+   color: #6BB36B;
+   text-shadow: none;
+   border: 1px solid #e6e6e6;
+   width: 22px;
+   }
+.Button {
+  width: auto;
+}
+.Button:hover, #AttachFileLink {
+   color: #6BB36B;
+   text-shadow: 0 1px 0 #fff;
+}
+.Button:focus {
+   background: #c2c2c2;
+}
+ul.DataList a.Delete {
+	padding: 4px;
+  background:#f2f2f2;
+  color: #282828;
+  border: 1px solid #ddd;
+}
+ul.DataList div.Meta {
+  margin-bottom: 8px;
+}
+
+ul.DataList a.Delete:hover {
+    border: 1px solid #282828;
+    background: #c4c4c4;
+}
+
+div.Box {
+	-moz-box-shadow:0 0 0px #fff;
+}
+
+/* ============================================================= Header */
+
+#Head {
+	background:#525252;
+	padding:0;
+	text-align:right;
+	height:130px;
+	border-bottom:1px solid #969696;
+}
+
+body #Head h1 {
+	float: left;
+	margin:25px 0 0 10px;
+	padding:0;
+}
+
+div#t-right {
+	float:right;
+	position:relative;
+	width:488px;
+	z-index:5;
+}
+
+div#t-right p.intro {
+	color:#8dc48d;
+	font-size:1.7em;
+	font-weight: bold;
+	line-height:1.4em;
+	margin:55px 70px 0 30px;
+	text-align:right;
+}
+div#t-right p.intro:hover {
+	color:#6BB36B;
+}
+div.Menu {
+	text-align:left;
+	
+}
+
+ul#Menu {
+	float:left;
+	padding:0;
+}
+
+#Head h1.Title a{
+	color:#fff;
+	font-size:3em;
+	text-shadow: 0 1px 0 #BDBDBD;
+
+}
+
+div.Menu {
+	float:left;
+	margin:30px 0 30px 10px;
+	text-align:left;
+	width:960px; 
+}
+
+#Head h1.Title a:hover{
+	color:#e0e0e0;
+	font-size:3em;
+	text-shadow: 0 1px 0 #BDBDBD;
+}
+
+#Menu a, #Menu li.Active a {
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-topright:3px;
+	background:#525252;
+	color:#b488b4;
+	margin-top: -20px;
+}
+
+#Menu li a:hover,#Menu li.Active a:hover {
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	background:#525252;
+	color:#8dc48d !important;
+}
+
+#Menu li ul li a:hover,#Menu li.Active ul li a:hover {
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	background:#c4c4c4;
+	color:#282828 !important;
+}
+
+#Menu ul, #Menu li.Active {
+	background:#f2f2f2;
+	color:#282828;
+}
+
+#Menu li.NonTab, #Menu li.NonTab a {
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-topright:3px;
+	background:#c4c4c4;
+	color:#282828;
+}
+
+#Menu a span, #Menu li.Active a span, #Menu li.Highlight a:hover span {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	background:#fafafa;
+	border:1px solid #525252;
+	color:#498d49;
+}
+
+div.Tabs div.SubTab {
+	background:#6b6b6b;
+	color;#8dc48d;
+}
+
+div.Preview {
+	background:#fff;
+}
+div.Preview div.Message pre, ul.MessageList div.Message pre {
+    background: #FFFFE5;
+}
+
+/* ============================================================= Entry Screen */
+body.Entry #Content {
+	float:left;
+}
+body.Entry #Content h1 {
+  font-size:19px;
+	font-weight:normal;
+	line-height:22px;
+	padding:20px 0 5px 5px;
+	font-family:Arial,Helvetica,sans-serif;
+	color:#b488b4;
+}
+
+body.Entry #Search{
+	padding:0 0 7px 7px;
+}
+
+body.Entry #Content div.Box {
+	background:#525252;
+	border:1px solid #969696;
+}
+body.Entry form ul li label {
+	color:#8dc48d;
+}
+
+/* ============================================================= content */
+
+
+#Content {
+	float:left;
+	margin:0 0 40px;
+	padding:5px 20px 20px;
+	width:630px;  
+}
+
+div.Tabs {
+	background:#5e5e5e;
+	border:1px solid #5e5e5e;
+	display:block;
+	margin-left: 92px;
+	padding:5px 8px;
+	width: 540px;
+	color: #8dc48d;
+}
+	
+div.MessageForm{
+  background:#525252;
+	border:1px solid #e4ca95;
+	display:block;
+	margin-bottom:30px;
+	margin-top: 30px;
+	padding:5px 8px;
+  width:614px;
+}
+
+a.Active, div.Tabs li.Active a {
+	background:#FFFFFF;
+	color:#282828;
+}
+
+div.MessageForm a.Cancel, div.MessageForm a.Cancel:link, div.MessageForm a.Cancel:active, div.MessageForm a.Cancel:visited, div.MorePager a, div.MorePager a:link,  div.MorePager a:active, div.MorePager a:visited, a.TabLink, a.TabLink:link,  a.TabLink:active, a.TabLink:visited, div.Tabs li a, div.Tabs li a:link, div.Tabs li a:active, div.Tabs li a:visited {
+	background:#6b6b6b;
+	border:1px solid #969696;
+	font-size:12px;
+	color:#8dc48d;
+}
+
+div.MessageForm a.Cancel:hover, div.MorePager a:hover, a.TabLink:hover, div.Tabs li a:hover {
+	background:#5e5e5e;
+  border:1px solid #5e5e5e;
+	font-size:12px;
+	color: #b488b4;
+}
+
+ul.DataList li.Item {
+	border-bottom:1px solid #e4ca95;
+  background: #5e5e5e;
+}
+
+.Mine {
+	background:#fff;
+}
+
+ul.DataList a.Title {
+	font-size:15px;
+	font-weight:bold;
+	line-height:22px;
+	padding:7px 0 5px;
+	font-family:Arial,Helvetica,sans-serif;
+	color:#8dc48d;
+}
+ul.DataList a.Title:hover {
+  color: #b488b4;
+}
+
+ul.DataList div.Meta a {
+    color: #b488b4;
+    font-weight:bold;
+}
+
+div.Tabs li a span {
+	background:#fafafa;
+	color:#498d49;
+  margin: 0 0 0 5px;
+  padding: -2px 2px 2px 2px;
+}
+ul.DataList div.Meta strong {
+	background:#c2c2c2;
+	color:#fff;
+}
+
+ul.DataList div.Meta span.Announcement {
+	background:#fafafa;
+	color:#b488b4;
+}
+
+ul.DataList li.Mine div.Meta a.Category {
+	background:#6b6b6b;
+	color: #8dc48d;
+}
+ul.DataList div.Meta a.Category {
+	background:#6b6b6b;
+}
+ul.DataList div.Meta span, ul.DataList div.Meta strong {
+  margin-right: 12px;
+  color: #fff;
+}
+ul.DataList div.Meta span.Closed {
+  color: #b488b4;
+  background: #fafafa;
+}
+ul.Options li.Active {
+  border-bottom: none;
+}
+
+a.Bookmark,
+a.Bookmarking {
+	float: right;
+   display: block;
+   background: url(images/star_sprite.png) top center no-repeat;
+   height: 22px;
+   width: 22px;
+   margin: 2px 4px 0 4px;
+}
+a.Bookmark span,
+a.Bookmarking span {
+   display: none;
+}
+a.Bookmarked {
+   background: url(images/star_sprite.png) center center no-repeat;
+}
+a.Bookmarking {
+   background: url(images/star_sprite.png) bottom center no-repeat;
+}
+
+/* ============================================================= discussions */
+
+#DiscussionForm h2 {
+	font-size:19px;
+	font-weight:normal;
+	line-height:22px;
+	padding:7px 0 5px;
+	font-family:Arial,Helvetica,sans-serif;
+	color:#8dc48d;
+}
+
+#DiscussionForm form {
+	background:#525252;
+	border:1px solid #969696;
+	margin:0;
+	padding:20px;
+	width:880px;
+}
+#DiscussionForm ul.PostOptions label {
+    color: #dedede;
+}
+#DiscussionForm label {
+    color: #dbdbdb;
+}
+div.Form textarea {
+	height:100px;
+	margin:0 0 6px;
+	min-height:100px;
+	width:600px;
+}
+ul.MessageList div.Meta,ul.MessageList div.Meta a {
+    color: #2b2d33;
+    font-size: 10px;
+    min-height: 40px;
+}
+
+
+li.Editing {
+	background:#f2f2f2 none repeat scroll 0 0;
+}
+
+input#Form_SaveComment.Button.CommentButton{
+	margin-right:45px;
+}
+
+#DiscussionForm input.InputBox {
+	margin-bottom:10px;
+	width:880px;
+}
+
+#DiscussionForm textarea {
+	height:100px;
+	margin:0 0 6px;
+	min-height:100px;
+	width:880px;
+}
+
+/* ============================================================== MessageList */
+/* used for lists of message-based content (discussion comments, private */
+											
+ul.MessageList, ul.MessageList li {
+	margin:0 0 10px;
+}
+ul.MessageList li.Item {
+  border-bottom: 1px solid #e4ca95;
+  background: #5e5e5e;
+}
+div.Comment div.CommentForm textarea {
+	width:600px;
+}
+
+/* =======================
+====================================== activities */
+
+
+ul.Activities div.Excerpt a,
+ul.Activities div.Meta a {
+   color: #b488b4;
+}
+ul.Activities div.Excerpt a:hover,
+ul.Activities div.Meta a:hover {
+   color: #9e9e9e;
+}
+
+ul.Activities ul.DataList li {
+	background:#525252 none repeat scroll 0 0;
+  margin-top: 5px; 
+
+}
+
+ul.Activities li.CommentForm input.Button {
+	-moz-box-shadow:0 0 0px #fff;
+	font-size:12px;
+}
+ul.Activities div.Excerpt {
+    color: #b488b4;
+}
+ul.Activities a.CommentLink, ul.Activities a.CommentLink:hover {
+    background: none repeat scroll 0 0 #5e5e5e;
+    border: 1px solid #969696;
+    color: #969696 !important;
+    cursor: text;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 100%;
+    padding: 5px;
+    text-decoration: none;
+}
+ul.Activities div.Title a {
+    color: #8dc48d;
+    font-size: 16px;
+}
+
+form.Activity textarea {
+	width:600px;
+	margin-top: 50px;
+	border: 2px solid #969696;
+}
+
+/* ==================================================== New Conversation Form */
+
+#ConversationForm h2 {
+	font-size:19px;
+	font-weight:normal;
+	line-height:22px;
+	padding:7px 0 5px;
+	font-family:Arial,Helvetica,sans-serif;
+	color:#282828;
+}
+
+#ConversationForm form {
+	background:#f2f2f2;
+	border:1px solid #c4c4c4;
+	margin:0;
+	padding:20px;
+}
+#ConversationForm label {
+    color: #b488b4;
+}
+.ac_over {
+	background:#c2c2c2;
+	color:#282828;
+}
+
+.ac_over strong {
+	background:#c2c2c2;
+	font-weight:normal;
+}
+
+#MessageForm {
+	background:#525252;
+	border: 1px solid #e4ca95
+}
+
+#MessageForm h2 {
+	color:#b488b4;
+}
+
+/* ============================================================= profile page */
+
+body.Profile #Content {
+
+	width:630px;
+}
+
+body.Profile #Panel {
+  padding:20px 0 0 20px;
+}
+body.Profile #Panel div.Box a {
+  color: #8dc48d;
+}
+body.Profile #Panel div.Box a:hover {
+  color: #6bb36b;
+}
+div.User h1 {
+	margin:15px 0 20px 0;
+	font-size:19px;
+	font-weight:normal;
+	line-height:22px;
+	font-family:Arial,Helvetica,sans-serif;
+	color:#282828;
+}
+
+div.Photo img{
+	border:2px solid #969696;
+  padding:2px;
+	margin-bottom: 10px;
+	background: #525252;
+}
+
+ul.DataList div.Photo img {
+	border:1px solid #969696;
+	padding: 2px;
+}
+ul.Activities div.Excerpt img {
+    border: none;
+}
+ul.MessageList div.Meta span.Author img {
+    border: 1px solid #969696;
+    padding: 1px;
+}
+
+ul.PanelInfo li {
+	padding:5px;
+}
+
+body.Profile ul.PanelInfo{
+	border:2px solid #969696;
+	background: #525252;
+}
+body.Profile ul.PanelInfo li{
+	background:#fafafa;
+	border:1px solid #969696;
+	width: 200px;
+	margin: 10px;
+	text-align:center;
+}
+
+div.Box dl {
+	background:#fafafa none repeat scroll 0 0;
+	border-bottom:1px solid #969696;
+	border-top:1px solid #969696;
+	overflow:hidden;
+	padding:3px;
+}
+div.Box p {
+    color: #fff;
+}
+div.Box dl dt{
+  color:#b488b4;
+  font-weigh: bold;
+}
+div.Popup div.Body {
+	border:4px solid #969696;
+}
+div.Popup #ConversationForm h2 {
+    color: #FFFFFF;
+    background:#525252;
+}
+div.Popup h1, div.Popup h2 {
+	background:#525252;
+	border-bottom:1px solid #ddd;
+	color:#8dc48d;
+}
+div.Popup .Footer {
+	background:#fff;
+	border-top:1px solid #fff;
+	padding:2px 6px 0 0;
+}
+div.Connect form ul li label, div.SignInPopup form ul li label, body#dashboard_entry_password form ul li label, body#dashboard_entry_signin form ul li label {
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 0;
+    color:#8dc48d;
+}
+.CreateAccount {
+  color: #2b2d33;
+}
+/* ============================================================= search */
+
+#Search {	
+	background:#dbdbdb;
+  display:block;
+	margin:30px 0 10px;
+	padding:5px;
+	border: 2px solid #969696;
+}
+
+
+#Head form input.InputBox {
+	background:#FFFFFF;
+	border:1px solid #f2f2f2;
+	color:#282828;
+	width:150px;
+}
+
+#Panel input.InputBox, div.AddPeople textarea.MultiComplete {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #969696;
+    color: #969696;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 4px 2px 4px 0;
+    width: 180px;
+}
+#Panel input.Button {
+    border: 1px solid #969696;
+    color: #6BB36B;
+    text-shadow:0 1px 0 #fff;
+}
+#Panel input.Button:hover {
+    border: 1px solid #969696;
+    color: #478A47;
+    background: #ededed;
+}
+input.DateBox, input.InputBox, input.SmallInput, textarea {
+	font-family:Georgia,"Times New Roman",Times,serif;;
+	font-size:12px;
+	padding:3px;
+}
+div.SearchTabs{
+  margin-top: 30px;
+}
+/* ============================================================= sidebar */
+
+div.Box {	
+	background:#525252 none repeat scroll 0 0;
+	color:#282828;
+	border: 2px solid #969696;
+	padding: 10px;
+	
+}
+
+#Panel {
+	float:right;
+	margin-bottom:50px;
+	margin-top: -15px;
+	width:250px;
+	padding:15px 20px 20px;
+	background: #5e5e5e;
+}
+
+
+ul.PanelInfo {
+	border: 2px solid #969696;
+}
+ul.PanelInfo li {
+    background: none repeat scroll 0 0 #FAFAFA;
+    border: 2px solid #FAFAFA;
+    color: #80828c;
+    }
+ul.PanelInfo li a {
+  color: #b488b4;
+  font-weight: bold;
+    }
+ul.PanelInfo li a:hover {
+  color: #8dc48d;
+  font-weight: bold;
+    }    
+
+ul.PanelInfo li.Active {
+	border:1px solid #dbdbdb;
+	background:#dbdbdb;
+  color: #80828c;
+}
+ul.PanelInfo li.Active a {
+	color:#b488b4;
+}
+ul.PanelInfo li.Active a:hover {
+	color:#8dc48d;
+}
+ul.PanelInfo div.Meta strong {
+  background: none repeat scroll 0 0 #C2C2C2;
+  color: #2B2D33;
+  display: inline;
+  font-weight: normal;
+}
+/* ============================================================= inbox */
+ul.Conversations div.Meta a.Name {
+    color: #8dc48d;
+}
+#MessageForm textarea {
+  width: 600px;
+}
+/* ============================================================= footer */
+
+#Foot {
+	background:transparent;
+	clear:both;
+	color:#969696;
+	font-size: 80%;
+	border-top:1px solid #969696;
+}
+
+#Foot a, #Foot a:link, #Foot a:visited, #Foot a:active {
+	color:#8dc48d;
+}
+
+#Foot a:hover{
+	color:#498d49;
+	font-weight: bold;
+	/*text-decoration:underline;*/
+}
+#Foot .vanilla-ico {
+	background:url(images/vanilla_ico.png) no-repeat;
+	float:left;
+	width:15px;
+	height:15px;
+	margin:0;
+	padding:0 7px 7px 0;
+}
+
+.Foot {
+	background:#f2f2f2;
+	border-bottom:1px solid #dbdbdb;
+}
+
+#Foot div {
+	margin:0 0 20px 20px;
+	padding:6px 0;
+	text-align:left;
+	width:660px;
+}
+
+#Foot .info{
+ width: 150px;
+ text-align: right;
+ margin-top: -40px;
+ float: right;
+ }
+
+/* ============================================================= plugins */
+
+/*file uplaod*/
+div.Attachments {
+	background-color:#f2f2f2;
+}
+/*===========================================================other */
+a.ForgotPassword {
+color: #B488B4;
+}
+a.ForgotPassword:hover {
+color: #8DC48D;
+}
+.CreateAccount a{
+color: #B488B4;
+}
+.CreateAccount a:hover{
+color: #8DC48D;
+}

@@ -3,21 +3,10 @@
 // Conversations
 $Configuration['Conversations']['Version'] = '2.0.17.10';
 
-if ($_SERVER['pagoda'] == 'yes'){
-    // pagoda Database
-    $Configuration['Database']['Name'] = 'celia';
-    $Configuration['Database']['Host'] = 'localhost;unix_socket=/tmp/mysql/celia.sock';
-    $Configuration['Database']['User'] = 'ilona';
-    $Configuration['Database']['Password'] = 'x6grUFmu';
-}
-
-else{
-    // local Database
-    $Configuration['Database']['Name'] = 'taren';
-    $Configuration['Database']['Host'] = 'localhost';
-    $Configuration['Database']['User'] = 'root';
-    $Configuration['Database']['Password'] = 'root';
-}
+$Configuration['Database']['Name'] = 'mana';
+$Configuration['Database']['Host'] = 'tunnel.pagodabox.com:3306';
+$Configuration['Database']['User'] = 'steven';
+$Configuration['Database']['Password'] = '0V6tTGep';
 
 // EnabledApplications
 $Configuration['EnabledApplications']['Conversations'] = 'conversations';

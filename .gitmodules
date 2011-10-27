@@ -1,0 +1,3 @@
+[submodule "rec/subs"]
+	path = rec/subs
+	url = git@github.com:lyondhill/iddqd.git
